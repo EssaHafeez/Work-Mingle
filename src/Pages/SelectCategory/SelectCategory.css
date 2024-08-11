@@ -1,0 +1,85 @@
+.select-category-container {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../../Images/CategoryBackground.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-category-box {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #bfc2c1;
+  height: 350px;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.select-category-title {
+  margin-bottom: 50px;
+  font-size: larger;
+  color: #000;
+  text-align: center;
+}
+
+.login-signup-v2-button-first,
+.login-signup-v2-buttons {
+  margin-bottom: 16px;
+}
+
+.css-1vj7isi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 12px 24px;
+  margin-left: 50px;
+  border-radius: 1000px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #086e4e; /* Green border */
+  color: #086e4e; /* Green text */
+  transition: background-color 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.css-1vj7isi:hover {
+  background-color: #086e4e;
+  color: #fff;
+}
+
+.css-u25o92 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 12px 24px;
+  margin-left: 50px;
+  border-radius: 1000px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #086e4e; /* Solid green background */
+  color: #fff; /* White text */
+  border: none;
+  transition: background-color 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.css-u25o92:hover {
+  background-color: #065d3d; /* Darker green on hover */
+}
+
+.login-signup-v2-disclaimer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #3d463d;
+}
