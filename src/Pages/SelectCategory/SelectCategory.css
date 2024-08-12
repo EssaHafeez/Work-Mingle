@@ -48,13 +48,13 @@
   font-weight: 600;
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #086e4e; /* Green border */
-  color: #086e4e; /* Green text */
+  border: 2px solid #9ED90D; /* Green border * comitted*/
+  color: #9ED90D; /* Green text commited*/
   transition: background-color 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
 
 .css-1vj7isi:hover {
-  background-color: #086e4e;
+  background-color: #9ED90D;
   color: #fff;
 }
 
@@ -69,14 +69,17 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  background-color: #086e4e; /* Solid green background */
+  border: 2px solid #9ED90D; /* Green border * comitted*/
+  border: 2px solid #9ED90D; /* Green border * comitted*/
+  background-color: #9ED90D; /* Solid green background */
   color: #fff; /* White text */
   border: none;
   transition: background-color 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
 
 .css-u25o92:hover {
-  background-color: #065d3d; /* Darker green on hover */
+  border: 2px solid #9ED90D; /* Green border * comitted*/
+  background-color: #83b309; /* Darker green on hover */
 }
 
 .login-signup-v2-disclaimer {
