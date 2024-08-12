@@ -2,15 +2,22 @@ import React from 'react';
 import './UserInterface.css';  // Importing the CSS file
 import logo from '../../Images/logo.png';
 import headerlogo from '../../Images/headerlogo.png';
+import { useNavigate } from 'react-router-dom';
 
 
 function UserInterface() {
+
+    const navigate = useNavigate();
+
+    const goToSelectCategory = () => {
+    navigate('/category');
+  };
 
     return (
         <div className="work-mingle-container">
             <header className="header">
                 <img src={logo}  alt="Work Mingle Logo" className="logo" />
-                <button className="sign-up-button">Sign up →</button>
+                <button  className="sign-up-button" onClick={goToSelectCategory}>Sign up →</button>
             </header>
 
             <div className="content">
