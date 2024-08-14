@@ -1,22 +1,23 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #A1D629; /* Bright green background */
-  }
+
   
   .signup-container {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../Images/CategoryBackground.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
   }
   
   .signup-box {
     background-color: #FFFFFF;
     border-radius: 20px;
     padding: 40px;
-    width: 350px;
+    
+    width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
@@ -24,31 +25,39 @@ body {
   .signup-box h1 {
     margin-bottom: 30px;
     font-size: 36px;
-    color: #1E3932; /* Dark green color */
+    color: #0A2B14; /* Dark green color */
+    font-size: 60px;
+    margin-top: -20px;
   }
   
   .input-group {
     margin-bottom: 20px;
     text-align: left;
+    font-weight: 200;
   }
   
   .input-group label {
-    display: block;
+    
     font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 15px;
     color: #1E3932;
     margin-bottom: 5px;
   }
   
   .input-field {
-    width: 100%;
+    width: calc(100% - 40px); /* Reduces width to account for padding */
     padding: 10px;
     font-size: 16px;
     border: 1px solid #1E3932;
     border-radius: 5px;
+    margin-left: 13px; /* Adds space on the left side */
+    margin-right: 35px; /* Adds space on the right side */
   }
   
   .signup-btn {
-    background-color: #A1D629;
+    background-color: #9ED90D;
     color: #FFFFFF;
     border: none;
     padding: 12px;
@@ -61,8 +70,8 @@ body {
   
   .login-btn {
     background-color: transparent;
-    color: #1E3932;
-    border: 2px solid #1E3932;
+    color: #9ED90D;
+    border: 2px solid #9ED90D;
     padding: 10px;
     font-size: 16px;
     border-radius: 30px;
