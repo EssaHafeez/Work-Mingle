@@ -20,17 +20,20 @@ function LoginSignup() {
             </button>
           </div>
         </div>
+        //by later i can alter this linkgit 
         <div className="login-signup-v2-disclaimer">
           <span>
               By signing up you agree to our{' '}
-              <a target="_blank" rel="noopener noreferrer" href="/terms">
+              <a href="/terms">
               <span style={{color:'#9ED90D'}}> Terms of Use </span>
                </a>
                and  
+               <div>
               <a target="_blank" rel="noopener noreferrer" href="/privacy">
               <span style={{color:'#9ED90D'}} >Privacy Policy </span>
               </a>
                . 
+               </div>
           </span>
         </div>
       </div>
