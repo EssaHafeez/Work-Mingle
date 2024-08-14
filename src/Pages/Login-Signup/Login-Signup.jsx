@@ -1,7 +1,19 @@
 import React from 'react';
 import './Login-Signup.css';
+import { useNavigate } from 'react-router-dom';
 
 function LoginSignup() {
+
+
+  const navigate = useNavigate();
+
+  const goToSignuppage = () => {
+  navigate('/signup');
+};
+
+const goToLoginpage = () => {
+  navigate('/login');
+};
   return (
     <div className="select-category-container">
       <div className="select-category-box">
@@ -10,12 +22,12 @@ function LoginSignup() {
         </div>
         <div className="login-signup-v2">
           <div className="login-signup-v2-button-first">
-            <button className="css-u25o92">
+            <button onClick={goToLoginpage} className="css-u25o92">
               <span className="labour">Login</span>
             </button>
           </div>
           <div className="login-signup-v2-buttons">
-            <button className="css-1vj7isi">
+            <button onClick={goToSignuppage}className="css-1vj7isi">
               <span>Signup</span>
             </button>
           </div>
