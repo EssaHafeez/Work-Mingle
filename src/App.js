@@ -4,6 +4,7 @@ import SelectCategory from './Pages/SelectCategory/SelectCategory';
 import LoginSignup from './Pages/Login-Signup/Login-Signup';
 import Signup from './Pages/Signup/Signup';
 import Login from './Pages/Login/Login';
+import SetPasswordForm from './Pages/SetPasswordForm/SetPasswordForm';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -18,8 +19,9 @@ function App() {
         <Route path="/" element={<LoginSignup />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-
-        
+        <Route path="/setpasswordform" element={<SetPasswordForm />} />
+          
+    
       </Routes>
     </Router>
   );

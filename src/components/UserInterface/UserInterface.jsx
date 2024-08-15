@@ -15,9 +15,9 @@ function UserInterface() {
 
     return (
         <div className="work-mingle-container">
-            <header className="header">
+            <header className="header6">
                 <img src={logo}  alt="Work Mingle Logo" className="logo" />
-                <button  className="sign-up-button" onClick={goToSelectCategory}>Sign up →</button>
+                <button  className="sign-up-button6" onClick={goToSelectCategory}>Sign up →</button>
             </header>
 
             <div className="content">

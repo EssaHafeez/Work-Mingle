@@ -1,8 +1,15 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import './Signup.css';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+
+  const navigate = useNavigate();
+
+  const goToLoginpage = () => {
+  navigate('/login');
+  };
   return (
     <div className="signup-container">
       <div className="signup-box">
@@ -46,7 +53,7 @@ const Signup = () => {
                 />
               </div>
 
-              <button type="submit" className="signup-btn">Sign up</button>
+              <button type="submit"   onClick={goToLoginpage}className="signup-btn">Sign up</button>
               <button type="button" className="login-btn">Log In</button>   
             </Form>
           )}

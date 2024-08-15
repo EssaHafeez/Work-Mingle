@@ -7,7 +7,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.header {
+.header6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
     padding-left: 100px;
 }
 
-.sign-up-button {
+.sign-up-button6 {
     background-color: #ffffff;
     color: #000000;
     padding: 10px 20px;

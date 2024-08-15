@@ -9,11 +9,12 @@ function LoginSignup() {
 
   const goToSignuppage = () => {
   navigate('/signup');
-};
+      };
 
 const goToLoginpage = () => {
   navigate('/login');
-};
+
+      };
   return (
     <div className="select-category-container">
       <div className="select-category-box">
@@ -32,7 +33,7 @@ const goToLoginpage = () => {
             </button>
           </div>
         </div>
-        //by later i can alter this linkgit 
+        
         <div className="login-signup-v2-disclaimer">
           <span>
               By signing up you agree to our{' '}

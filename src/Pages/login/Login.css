@@ -1,6 +1,5 @@
 
-  
-  .signup-container {
+  .login-container {
     width: 100%;
     min-height: 100vh;
     background: url('../../Images/CategoryBackground.png');
@@ -12,51 +11,80 @@
     justify-content: center;
   }
   
-  .signup-box {
+  .login-box {
     background-color: #FFFFFF;
     border-radius: 20px;
     padding: 40px;
-    
     width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
-  .signup-box h1 {
+  .login-box h1 {
     margin-bottom: 30px;
-    font-size: 36px;
+    font-size: 50px;
     color: #0A2B14; /* Dark green color */
-    font-size: 60px;
     margin-top: -20px;
   }
   
   .input-group {
     margin-bottom: 20px;
     text-align: left;
-    font-weight: 200;
   }
   
   .input-group label {
-    
+    display: block;
     font-size: 14px;
-    font-weight: 500;
-    text-align: left;
-    padding-left: 13px;
+    padding-left: 15px;
     color: #1E3932;
     margin-bottom: 5px;
   }
   
   .input-field {
-    width: calc(100% - 40px); /* Reduces width to account for padding */
+    width: 85%;
     padding: 10px;
+    
+     /* Adds space on the left side */
+    margin-right: 15px;
+    margin-left: 25px;
     font-size: 16px;
     border: 1px solid #1E3932;
     border-radius: 5px;
-    margin-left: 13px; /* Adds space on the left side */
-    margin-right: 35px; /* Adds space on the right side */
   }
   
-  .signup-btn {
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #9ED90D;
+    font-style: bold;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    padding-left: 24px;
+  }
+
+  
+  
+  .signup-prompt {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-prompt a {
+    color: #0A2B14;
+    text-decoration: none;
+  }
+  
+  .login-btn1 {
     background-color: #9ED90D;
     color: #FFFFFF;
     border: none;
@@ -68,15 +96,11 @@
     margin-top: 20px;
   }
   
-  .login-btn {
-    background-color: transparent;
-    color: #9ED90D;
-    border: 2px solid #9ED90D;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 30px;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 10px;
+  .login-btn1:hover{
+    background-color:  #2C6232;  
+    color:#fff;
+    background: #9ED90D;;
   }
-  
+  .forgot-password:hover {
+    color: #2C6232;
+  }
