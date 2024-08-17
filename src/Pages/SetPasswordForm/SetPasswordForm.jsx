@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import './SetPasswordForm.css';
+import { useNavigate } from 'react-router-dom';
 
 function SetPasswordForm() {
+
+  const navigate = useNavigate();
+
+  const goToOtppage = () => {
+  navigate('/Otppage');
+      };
   const [phoneNumber, setPhoneNumber] = useState('');
   const [error, setError] = useState('');
 
@@ -35,7 +42,7 @@ function SetPasswordForm() {
             />
             {error && <span className="ierror-text">{error}</span>}
           </div>
-          <button className="btn5" type="submit" disabled={!phoneNumber}>Set password</button>
+          <button className="btn5" type="submit" disabled={!phoneNumber} onClick={goToOtppage}>Set password</button>
         </form>
       </div>
     </div>

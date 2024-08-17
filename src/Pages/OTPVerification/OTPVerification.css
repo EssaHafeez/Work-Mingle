@@ -1,0 +1,86 @@
+/* Container styles */
+.otp-verification-containery {
+    background-color: #a3d716;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form container styles */
+  .otp-form-containery {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styles */
+  .otp-titley {
+    font-size: 24px;
+    font-weight: bold;
+    color: #08221e;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtitle and number styles */
+  .otp-subtitley,
+  .otp-numbery {
+    color: #08221e;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .otp-numbery {
+    margin-bottom: 20px;
+  }
+  
+  /* Input styles */
+  .otp-inputsy {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .otp-inputy {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Resend link styles */
+  .otp-resendy {
+    color: #a3d716;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .otp-resendy:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styles */
+  .otp-buttony {
+    background-color: #a3d716;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .otp-buttony:hover {
+    background-color: #92c715;
+  }
+  
