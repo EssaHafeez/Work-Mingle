@@ -1,24 +1,60 @@
-import React from 'react';
-import './OTPVerification.css';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // For sending requests to the backend
+import './OTPVerification.css'; // Import the CSS file
 
-const OTPVerificationy = () => {
+const OTPVerification = () => {
+  const [otp, setOtp] = useState('');
+  const [message, setMessage] = useState('');
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setOtp(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      // Send OTP for verification to the backend
+      const response = await axios.post('http://localhost:5000/api/auth/verify-otp', { otp });
+
+      if (response.data.success) {
+        // OTP verified successfully, redirect to dashboard or any other page
+        setMessage('OTP verified successfully!');
+        navigate('/dashboard');
+      } else {
+        setMessage('OTP verification failed. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error verifying OTP:', error);
+      setMessage('An error occurred during verification. Please try again.');
+    }
+  };
+
   return (
-    <div className="otp-verification-containery">
-      <div className="otp-form-containery">
-        <h2 className="otp-titley">Enter the code</h2>
-        <p className="otp-subtitley">We have sent you a verification code to</p>
-        <p className="otp-numbery">+92 3040422023</p>
-        <div className="otp-inputsy">
-          <input type="text" maxLength="1" className="otp-inputy" value="4" readOnly />
-          <input type="text" maxLength="1" className="otp-inputy" value="7" readOnly />
-          <input type="text" maxLength="1" className="otp-inputy" value="1" readOnly />
-          <input type="text" maxLength="1" className="otp-inputy" value="1" readOnly />
-        </div>
-        <a href="#" className="otp-resendy">Resend OTP</a>
-        <button className="otp-buttony">VERIFY</button>
+    <div className="otp-container">
+      <div className="otp-box">
+        <h2 className="otp-title">OTP Verification</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="otp-input-group">
+            <label htmlFor="otp" className="otp-label">Enter OTP:</label>
+            <input
+              type="text"
+              id="otp"
+              value={otp}
+              onChange={handleChange}
+              required
+              className="otp-input"
+            />
+          </div>
+          <button type="submit" className="otp-button">
+            Verify OTP
+          </button>
+        </form>
+        {message && <p className="otp-message">{message}</p>}
       </div>
     </div>
   );
 };
 
-export default OTPVerificationy;
+export default OTPVerification;

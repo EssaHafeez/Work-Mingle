@@ -19,7 +19,7 @@ const goToLoginpage = () => {
     <div className="select-category-container">
       <div className="select-category-box">
         <div className="select-category-title">
-          <h1>WorkMingle</h1>
+          <h1>Labor portal</h1>
         </div>
         <div className="login-signup-v2">
           <div className="login-signup-v2-button-first">

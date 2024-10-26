@@ -9,11 +9,16 @@ function SelectCategory() {
     const goToLoginSignuppage = () => {
     navigate('/loginsignup');
   };
+  const goToLoginSignuppageCus = () => {
+    navigate('/customer-loginsignup');
+  };
+ 
+ 
   return (
     <div className="select-category-container">
       <div className="select-category-box">
         <div className="select-category-title">
-          <h1>JoinUsAs</h1>
+          <h1>Join Us As</h1>
         </div>
         <div className="login-signup-v2">
           <div className="login-signup-v2-button-first">
@@ -22,7 +27,7 @@ function SelectCategory() {
             </button> 
           </div>
           <div className="login-signup-v2-buttons">
-          <button onClick={goToLoginSignuppage} className="css-1vj7isi">
+          <button onClick={goToLoginSignuppageCus} className="css-1vj7isi">
               <span  >Customer</span>
             </button>
           </div>

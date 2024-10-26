@@ -1,86 +1,82 @@
-/* Container styles */
-.otp-verification-containery {
-    background-color: #a3d716;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Form container styles */
-  .otp-form-containery {
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Title styles */
-  .otp-titley {
-    font-size: 24px;
-    font-weight: bold;
-    color: #08221e;
-    margin-bottom: 10px;
-  }
-  
-  /* Subtitle and number styles */
-  .otp-subtitley,
-  .otp-numbery {
-    color: #08221e;
-    font-size: 16px;
-    margin: 0;
-  }
-  
-  .otp-numbery {
-    margin-bottom: 20px;
-  }
-  
-  /* Input styles */
-  .otp-inputsy {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .otp-inputy {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    text-align: center;
-    margin: 0 5px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #f5f5f5;
-  }
-  
-  /* Resend link styles */
-  .otp-resendy {
-    color: #a3d716;
-    text-decoration: none;
-    font-size: 14px;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  
-  .otp-resendy:hover {
-    text-decoration: underline;
-  }
-  
-  /* Button styles */
-  .otp-buttony {
-    background-color: #a3d716;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .otp-buttony:hover {
-    background-color: #92c715;
-  }
-  
+/* General container for OTP verification */
+.otp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7fafc; /* Light gray background */
+}
+
+/* Card for OTP input */
+.otp-box {
+  background-color: #ffffff; /* White background for the card */
+  padding: 2rem; /* Spacing inside the card */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 400px; /* Maximum width of the card */
+  width: 100%; /* Full width */
+}
+
+/* Title of the card */
+.otp-title {
+  font-size: 1.5rem; /* Title size */
+  font-weight: bold; /* Title weight */
+  margin-bottom: 1.5rem; /* Spacing below the title */
+  text-align: center; /* Center the title */
+  color: #4a5568; /* Dark gray color */
+}
+
+/* Container for input fields */
+.otp-input-group {
+  margin-bottom: 1rem; /* Space below input container */
+}
+
+/* Label for input fields */
+.otp-label {
+  display: block; /* Block display for the label */
+  color: #4a5568; /* Dark gray color */
+  font-size: 0.875rem; /* Smaller font size */
+  margin-bottom: 0.5rem; /* Space below the label */
+}
+
+/* Input field for OTP */
+.otp-input {
+  width: 100%; /* Full width */
+  padding: 0.5rem; /* Inner spacing */
+  border: 1px solid #cbd5e0; /* Light gray border */
+  border-radius: 0.25rem; /* Rounded corners */
+  outline: none; /* No outline */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  font-size: 1rem; /* Consistent font size */
+  transition: border-color 0.2s, box-shadow 0.2s; /* Smooth transition for focus */
+}
+
+/* Styles for input field on focus */
+.otp-input:focus {
+  border-color: #4c51bf; /* Blue border on focus */
+  box-shadow: 0 0 0 1px rgba(76, 153, 255, 0.5); /* Box shadow on focus */
+}
+
+/* Submit button for OTP verification */
+.otp-button {
+  width: 100%; /* Full width */
+  background-color: #4c51bf; /* Blue background */
+  color: #ffffff; /* White text */
+  padding: 0.75rem; /* Inner spacing */
+  border: none; /* No border */
+  border-radius: 0.25rem; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.2s; /* Smooth transition */
+}
+
+/* Hover effect for the submit button */
+.otp-button:hover {
+  background-color: #5a67d8; /* Darker blue on hover */
+}
+
+/* Message for OTP verification feedback */
+.otp-message {
+  margin-top: 1rem; /* Space above the message */
+  text-align: center; /* Center the message */
+  color: #e53e3e; /* Red color for error messages */
+}
